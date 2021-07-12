@@ -11,8 +11,8 @@ inv <- NULL
   }
   get <- function() x
   setInverse <- function(solveMatrix) inv <<- solveMatrix
-  getInverse <- function() inv
-  list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
+  
+  
 }
 
 
@@ -25,8 +25,6 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(inv)
   }
-  data <- x$get()
-  inv <- solve(data)
   x$setInverse(inv)
   inv      
 }
