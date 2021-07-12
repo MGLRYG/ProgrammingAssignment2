@@ -9,6 +9,13 @@ inv <- NULL
     x <<- y
     inv <<- NULL
   }
+  
+  
+  
+  
+  
+  
+  
   get <- function() x
   setInverse <- function(solveMatrix) inv <<- solveMatrix
   
@@ -25,6 +32,10 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(inv)
   }
+  
+  
+  
+
   x$setInverse(inv)
   inv      
 }
