@@ -11,13 +11,17 @@ inv <- NULL
   }
   
   
-  
-  
-  
+  a
+  b
+  c
+  d
+  e
+  f
+  g
+  h
   
   
   get <- function() x
-  setInverse <- function(solveMatrix) inv <<- solveMatrix
   
   
 }
@@ -35,7 +39,6 @@ cacheSolve <- function(x, ...) {
   
   
   
-
   x$setInverse(inv)
-  inv      
+
 }
